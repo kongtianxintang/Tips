@@ -1,1 +1,2 @@
 1.clip to bounds ~此属性设置为true 意味着 子视图会自动剪切超过父视图的部分
+2.WKWebview js传值 window.webkit.messageHandles.xxx.postMeassage("一定要传个东西 要不iOS端没有反应") 
