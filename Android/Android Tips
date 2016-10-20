@@ -1,0 +1,13 @@
+Android Tips
+
+1.android webview 6.0以下 内嵌视频播放 切换页面后 依然播放的问题
+@Override
+ public void onPause(){ 
+ 	webview.onPause();//暂停
+ 	super.onPause();
+ }
+ @Override
+ public void onResume(){
+ 	webview.onResume();//恢复
+ 	super.onResume();
+ }
