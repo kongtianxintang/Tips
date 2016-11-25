@@ -16,3 +16,7 @@ Android Tips
 最近在开发项目中遇到一个问题，布局高度在某些国产酷派小屏幕手机上高度不够全部显示，于是使用了ScrollView嵌套LinearLayout，但问题又出现了，在大屏幕手机如三星note3手机上下面会留白，问题的解决办法是在第一层LinearLayout里面嵌套多个LinearLayout，最重要的是将ScrollView中android:fillViewport设置为true。
 当ScrollView里的元素想填满ScrollView时，使用"fill_parent"是不管用的，必需为ScrollView设置：android:fillViewport="true"。
 当ScrollView没有fillVeewport=“true”时, 里面的元素(比如LinearLayout)会按照wrap_content来计算(不论它是否设了"fill_parent"),而如果LinearLayout的元素设置了fill_parent,那么也是不管用的，因为LinearLayout依赖里面的元素，而里面的元素又依赖LinearLayout,这样自相矛盾.所以里面元素设置了fill_parent，也会当做wrap_content来计算.
+
+
+3.okhttp
+成功回调response.body().string 执行第一次有效 第二次无效   原因：执行第一次后关闭了stream
