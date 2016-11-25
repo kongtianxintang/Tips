@@ -1,0 +1,18 @@
+/*********************************************************************************
+ * 版权所有,2016,北京蜜桃科技有限公司.
+ * Copyright(C),2016,MTKJ co., LTD.All rights reserved.
+ * project:
+ * created by Administrator
+ * Date:2016/11/25
+ * QQ/Tel/Mail:
+ * Description:
+ * Others:
+ * Modifier:
+ * Reason:
+ **********************************************************************************/
+public interface Person {
+    @FormUrlEncoded
+    @POST("/{path}")
+    Call<ResponseBody> person(@Path("path")String path,@FieldMap Map<String,String> map);
+    //@filedMap要加上注解 我也不知道为啥
+}
