@@ -2,3 +2,4 @@
 2.WKWebview js传值 window.webkit.messageHandles.xxx.postMeassage("一定要传个东西 要不iOS端没有反应") 
 3.viewcontroller的几个系统方法执行顺序 viewDidLoad->viewWillAppear->viewWillLayoutSubviews->viewDidAppear
 4.uisearchcontroller选择后不走deinit方法问题～>把searchcontroller的isActive设置为false
+5.tabbar 及 navigtionbar 遮挡问题 isTranslucent = false 
