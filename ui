@@ -4,3 +4,5 @@
 4.uisearchcontroller选择后不走deinit方法问题～>把searchcontroller的isActive设置为false
 5.tabbar 及 navigtionbar 遮挡问题 isTranslucent = false 
 6.uicollectionview cell间无缝隙排列 会有1px多出问题 修改uicollectionviewcell的contentview的背景颜色与cell的颜色一致
+7.open func boundingRect(with size: CGSize, options: NSStringDrawingOptions = [], attributes: [String : Any]? = nil, context: NSStringDrawingContext?) -> CGRect 计算不准确的问题 返回值CGRect的Size含有小数点，如果使用函数返回值CGRect的Size来定义View大小，必需使用“ceil”函数获取长宽（ceil：大于当前值的最小正数）
+
