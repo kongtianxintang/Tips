@@ -7,3 +7,4 @@
 7.open func boundingRect(with size: CGSize, options: NSStringDrawingOptions = [], attributes: [String : Any]? = nil, context: NSStringDrawingContext?) -> CGRect 计算不准确的问题 返回值CGRect的Size含有小数点，如果使用函数返回值CGRect的Size来定义View大小，必需使用“ceil”函数获取长宽（ceil：大于当前值的最小正数）
 8.Xcode上传app包报‘an existing transporter instance is currently uploading this package’错 去 ~/.itmstransporter/UploadTokens/  删除目录内所有文件，即可重新上传
 9.xib中设置label的 font 字体 如果系统里没有 会导致push出这个controller 卡顿 
+10.coredata 文件路径不要存放在caches目录下,当手机剩余容量不足时会被干掉
