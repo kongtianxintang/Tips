@@ -10,3 +10,4 @@
 10.coredata 文件路径不要存放在caches目录下,当手机剩余容量不足时会被干掉
 11.关于DispatchSourceTimer resume 及 suspend 需要成对出现 当暂停后如果调用了两次suspend 则需要调用两次resume....
 12.主动关闭蓝牙,iOS 10.0是先走蓝牙代理协议didDisconnectPeripheral 而11.0则先走centralManagerDidUpdateState
+13.蓝牙手环获取iOS通知/短信/来电,通过苹果的ANSC协议,主要工作在硬件工程师
