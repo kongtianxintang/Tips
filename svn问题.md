@@ -4,3 +4,8 @@
 ```
 svn update
 ```
+- a peg revision is not allowed here
+```
+在图片路径后面加@即可
+svn add "xxx@2x.png@"
+```
