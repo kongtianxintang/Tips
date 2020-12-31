@@ -1,0 +1,12 @@
+1.URL编码问题
+ios与后端unicode编码 特殊符号 譬如:"+" java 后端获取的为空格
+查资料显示 java.net.URLEncode会特殊处理把 " "转为"+" 但我们后台木有 很奇怪
+所以还是iOS端来处理
+
+使用 stringByAddingPercentEncodingWithAllowedCharacters
+var originalString = "test/test=42"
+var customAllowedSet =  NSCharacterSet(charactersInString:"=\"#%/<>?@\\^`{|}").invertedSet
+var escapedString = originalString.stringByAddingPercentEncodingWithAllowedCharacters(customAllowedSet)
+
+记住需要invertedSet 
+😭
