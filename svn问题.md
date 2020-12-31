@@ -9,3 +9,7 @@ svn update
 在图片路径后面加@即可
 svn add "xxx@2x.png@"
 ```
+- 用命令行添加所有未控制文件
+```
+svn st | awk '{if ( $1 == "?") { print $2}}' | xargs svn add
+```
