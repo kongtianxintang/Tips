@@ -1,0 +1,12 @@
+遇到有需要本地简单启动webserver服务调试的时候
+可以用mac os 中自带的python 启动简单webserver服务
+- 启动
+# python2.7
+ python -m SimpleHTTPServer 8081
+# python3.x. 
+ python3 -m http.server 8888
+ 
+# 默认是在根目录 打开之后可以通过浏览器访问你的目录文件
+
+- 暂停
+在命令行中 control + c 退出
